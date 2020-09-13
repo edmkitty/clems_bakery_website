@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  price: 1.5
+  category: MyString
+  on_sale: false
+  sale_modifier: 1.5
+  description: MyText
+
+two:
+  product_name: MyString
+  price: 1.5
+  category: MyString
+  on_sale: false
+  sale_modifier: 1.5
+  description: MyText
