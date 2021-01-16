@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Development Environment Setup:
 
-* Ruby version
+1. Install rbenv
+2. Install ruby 2.6.6
+3. `gem install rails`
+4. `brew install nvm`
+5. `nvm install 14.0.0` (Install node version 14 or higher)
+6. `nvm use 14.0.0`
+4. `bundle install`
+5. `rails db:migrate RAILS_ENV=development`
 
-* System dependencies
 
-* Configuration
+Troubleshooting
 
-* Database creation
+- Yarn errors 
 
-* Database initialization
+You will run into a yarn problem if you install rbenv. 
+If you get the following error:
+```
+rbenv: yarn: command not found
 
-* How to run the test suite
+The `yarn' command exists in these Ruby versions:
+  2.6.5
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Then do this:
+`rbenv local 2.6.5`
+`gem uninstall yarn` (apparently you can do `gem uninstal yarn`)
+`rbenv local 2.6.6`
+`rbenv rehash`
+`yarn -v`
 
-* Deployment instructions
+and you should be good.
 
-* ...
+
+
